@@ -7,7 +7,6 @@ $preheader = $page->preheader;
 $banner_url = $page->banner_url;
 
 ?>
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" style="background-color: #e5e5e5">
 <head>
@@ -21,13 +20,14 @@ $banner_url = $page->banner_url;
 
 	</style>
 </head>
-<body>
+<body style="<?=$style->body?>">
 	<div style="font-size: 0px; color: #ffffff; opacity: 0; visibility: hidden; width: 0; height: 0; display: none;"><?=$preheader?></div>
 
 	<table cellpadding="0" cellspacing="0"  style="<?=$style->table_upper_level?>">
 		<tr>
+			<td  style="<?=$style->leftField?>"></td>
+			<td id="main" style="<?=$style->main?>; padding-bottom: 30px; padding-right: <?=$mainPaddingLeft?>px; padding-top: 30px;">
 			
-			<td  style="<?=$style->main?>">
 
 <!--! ---------ОСНОВНОЙ БЛОК--------- -->
 
